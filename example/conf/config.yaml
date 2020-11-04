@@ -1,0 +1,14 @@
+defaults:
+  - hydra/sweeper: optuna
+
+hydra:
+  sweeper:
+    optuna_config:
+      direction: "minimize"
+      study_name: null
+      storage: "sqlite:///tmp.db"
+      n_trials: 20
+      n_jobs: 2
+
+x: 1
+y: 1
