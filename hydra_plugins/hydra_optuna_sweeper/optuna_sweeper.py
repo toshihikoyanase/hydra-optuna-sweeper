@@ -122,5 +122,4 @@ class OptunaSweeper(Sweeper):
         )
         log.info(f"Best parameters: {best_trial.params}")
         log.info(f"Best value: {best_trial.value}")
-        log.info(f"Storage: {self.optuna_config.storage}")
         log.info(f"Study name: {study.study_name}")
